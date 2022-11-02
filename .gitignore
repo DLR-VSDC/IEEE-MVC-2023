@@ -1,0 +1,20 @@
+# exclude following files
+*~
+*.bak
+*.bak-mo
+*.exe
+*.exp
+
+# Exclude Dymola stuff
+buildlog.txt
+desktop.ini
+dsfinal.txt
+dsin.txt
+dslog.txt
+dsmodel*
+dymosim*
+
+# Exclude Matlab/Simulink stuff
+/MVCExportedFMUs/slprj/sim
+/MVCExportedFMUs/slprj/_fmu
+/MVCMatlab/slprj
