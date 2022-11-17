@@ -11,7 +11,7 @@ of the main goals of the EMA.
 ## Annoucment
 **Registration is open**. All interested competitor teams are asked [to register for the MVC 2023](https://docs.google.com/forms/d/e/1FAIpQLSe94R0zzwrVEMW3Cklv1id_CjdjhQdCgGX9MugRUXq23lMYLg/viewform?usp=sf_link).
 ### Preliminary timeline
-- Registration open until end of Nov. 22
+- Registration open until end of Dec. 22
 - EMA submission deadline ~ March 23
 - Paper submission deadline - tba
 
