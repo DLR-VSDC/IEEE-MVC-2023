@@ -1,7 +1,4 @@
-% IEEE VTS Motor Vehicles Challenge 2023
-% University of California, Merced
 %% Initialize FMI Kit
-
 % download and extract the distribution archive to the current folder
 unzip(['https://github.com/CATIA-Systems/FMIKit-Simulink/releases/' ...
   'download/v3.0/FMIKit-Simulink-3.0.zip'], 'FMIKit-Simulink-3.0')

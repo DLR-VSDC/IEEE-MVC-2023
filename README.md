@@ -16,8 +16,12 @@ of the main goals of the EMA.
 - Paper submission deadline - tba
 
 ### Release Notes
-#### 2nd of Nov. 22 
-Initial Alpha release - future changes in the component's parameterization are likely.
+#### 16th of Dec. 22 - Beta 1 release 
+Major improvements and extended criteria, please refer to
+**[the release notes document of Beta 1](./beta1_release_notes.md)**
+
+#### 2nd of Nov. 22 - Initial Alpha release
+ - future changes in the component's parameterization are likely.
 
 ## Important Links
 - How to get ready in MATLAB/Simulink, please refer to [installation readme](Installation.md).

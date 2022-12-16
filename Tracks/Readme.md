@@ -29,37 +29,37 @@ Figure: An example of Munich-inner city track.
 ## Reference Mission Profile Figures (Velocity & Curvature)
 ### Standardized Tracks
 
-* **Track No. 1: FTP75**
+* **Track No. 1: FTP75** | Number of track repetitions: 7 | Track duration: 17318 s
 <img src="../media/track1.png" style="width: 6in" />
 
 
-* **Track No. 2: ECE15**
+* **Track No. 2: ECE15** | Number of track repetitions: 25 | Track duration: 19500 s
 <img src="../media/track2.png" style="width: 6in"  />
 
-* **Track No. 3: Artemis Urban**
+* **Track No. 3: Artemis Urban** | Number of track repetitions: 17 | Track duration: 16881 s
 <img src="../media/track3.png" style="width: 6in"  />
 
-* **Track No. 4: Artemis Rural**
+* **Track No. 4: Artemis Rural** | Number of track repetitions: 1 | Track duration: 1082 s
 <img src="../media/track4.png" style="width: 6in"  />
 
 
 ### DLR-Specific Tracks
-* **Track No. 5: DLR Driving Cycle 1**
+* **Track No. 5: Vires Rual Road Descent 1** | Number of track repetitions: 2.36 | Track duration: 1770 s
 <img src="../media/track5.png"/>
 
-* **Track No. 6: Vires Rual Road Descent**
+* **Track No. 6: Vires Rual Road Descent 2** | Number of track repetitions: 24.4 | Track duration: 3030 s
 <img src="../media/track6.png" style="width:3.3686in;height:3.29562in" />
 
-* **Track No. 7: Non-optimized Munich inner-city #1**
+* **Track No. 7: Non-optimized Munich inner-city #1** | Number of track repetitions: 11 | Track duration: 2750 s
 <img src="../media/track9.png" style="width:3.3686in;height:3.29562in" />
 
-* **Track No. 8: Optimized Munich inner-city #1**
+* **Track No. 8: Optimized Munich inner-city #1** | Number of track repetitions: 46 | Track duration: 11500 s
 <img src="../media/track8.png" style="width:3.3686in;height:3.29562in" />
 
-* **Track No. 9: Non-optimized Munich inner-city #2**
+* **Track No. 9: Non-optimized Munich inner-city #2** | Number of track repetitions: 6 | Track duration: 1500 s
 <img src="../media/track7.png" style="width:3.3686in;height:3.29562in" />
 
-* **Track No. 10: Optimized Munich inner-city #2**
+* **Track No. 10: Optimized Munich inner-city #2** | Number of track repetitions: 37 | Track duration: 9249 s
 <img src="../media/track10.png" style="width:3.3686in;height:3.29562in" />
 
 **Please note:** Some of these illustrated tracks have been repeated over time for a longer mission time in the actual track files.
