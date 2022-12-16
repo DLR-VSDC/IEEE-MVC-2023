@@ -29,6 +29,7 @@ LICENSE text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.pdf filter=lfs diff=lfs merge=lfs -text
+*.fig filter=lfs diff=lfs merge=lfs -text
 
 # List of files that git archive should ignore
 .CI export-ignore
