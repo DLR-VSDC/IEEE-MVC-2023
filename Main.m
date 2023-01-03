@@ -41,7 +41,7 @@ fprintf('\n\nInitializing the Simulink model:\n')
 param.fuelcell.Imax     = 40;                                               % [A] maximum Fuel cell current
 param.fuelcell.SOCmax   = 1.00;                                             % [-] maximum allowed SoC
 param.fuelcell.SOCmin   = 0.05;                                             % [-] minimum allowed SoC
-param.fuelcell.H2_tank_level = 40;                                           % [kg] H2 tank initial level value
+param.fuelcell.H2_tank_level = 0.25;                                           % [kg] H2 tank initial level value
 
 param.bat.SOCmax        = 1.00;                                             % [-] maximum allowed SoC
 param.bat.SOCmin        = 0.20;                                             % [-] minimum allowed SoC
@@ -49,7 +49,7 @@ param.bat.SOC_delta     = 0.05;                                             % [-
 
 param.bat.SOCmin_stop   = 0.01;                                             % [-] vehicle shutdown if battery SoC become lower than this value
 param.bat.SOCmax_stop   = 1.01;                                             % [-] vehicle shutdown if battery SoC become higher than this value
-param.bat.SOC_init = 0.8;                                                   % [-] vehicle battery start SoC
+param.bat.SOC_init = 0.65;                                                   % [-] vehicle battery start SoC
 
 param.bat.Tmax          = 40;                                               % [deg C] maximum allowed temperature
 

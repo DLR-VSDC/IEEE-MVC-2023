@@ -1,4 +1,6 @@
 # List of FMU versions in anti-chronological order
+## 3rd of Jan. 2023
+- MVC2023_Hash_ddadadfe.fmu revised fuel cell model with new consumption table and changed Modelica model
 ## 8th of Dec. 2022
 - MVC2023_Hash_9bf0e383.fmu fixed division by zero error in the lateral controller
 ## 1st of Dec. 2022
@@ -12,4 +14,4 @@
 <img src="..\media\MVC2023_Hash_45a0ea85.png" style="width:3in;height:3in" />
 
 ## License
-Copyright © 2022 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
+Copyright © 2023 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
