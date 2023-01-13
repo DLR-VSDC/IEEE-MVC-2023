@@ -15,13 +15,15 @@ minimization of the energy consumption and battery degradation are some  of the 
 - Paper submission deadline - tba.
 ### Release Notes
 Please refer to [the change log](CHANGELOG.md).  
-**Latest: 3rd of Jan. 23 - Beta 2** (Revised fuel cell model).  
-**Remark:** Parameterization will be changed in the final release.
+**Latest: 13th of Jan. 23 - Beta 3** (i.a. corrected battery voltage signal).  
+**Remarks:** 
+- Parameterization is quiet likely in final state. Next release might be final release.  
+- Please take notice of our [General Answer to Questions about Modelica Implementation Details](https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/17)
 
 ## Important Links
 - How to get ready in MATLAB/Simulink, please refer to [installation readme](Installation.md).
 - For additional information please view presentation slides of the paper [*.pdf](./media/IEEE_VTS_MVC2023.pdf).
-- **New**: the [submitted version of the publication](https://elib.dlr.de/191407/) can be found in our elib repository.
+- The [submitted version of the publication](https://elib.dlr.de/191407/) can be found in our elib repository.
 - For information on the given tracks, please refer to [tracks readme](/Tracks/Readme.md).
 ### THE MVC 2023 Benchmark Problem
 

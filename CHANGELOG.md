@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Beta 3] - 2022-01-13
+
+### Changed
+Changes on main.m script:
+- Added FC SOC safety to stop the car if SoC_H2 tank goes below 1%.
+- Increased minimum allowed FC SoC (param.fuelcell.SOCmin) to 10%.
+- Reduced H2 tank size to 0.15 kg.
+- Decreased battery's maximum allowed SoC to 80%.
+- Decreased safety stop tolerance level of battery to 99% from 100.1%.
+- Lowered maximum allowed temperature to 35 deg C.
+
+Changes on Simulink model (testEnergyManagementAlgorithm.slx):
+- Initial velocity of the vehicle is set to zero. This solves [discussion #11](https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/11)
+- Safety stop condition have been added to the model/Performance Metrics, the one with yellow comment.
+- Inside Baseline EMA block, few additional signals are added that competitors could have access to.
+- Renamed H2_I to H2_content.
+- Included P_battery directly instead of computing it from P=V*I.
+- Removed some unnecessary scopes.
+
+
+### Fixed
+
+- Updated documentation of aging model - [Discussion #15](https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/15),   
+refer to [updated chapter 3c of the paper](./media/MVC2023_chapter3C_update_Beta3.pdf)
+- New FMU model `MVC2023_Hash_47c69bf5.fmu` changed battey voltage signal from OCV to the acutual measured value in the circuit.    
+ Added some additional signals to the batterybus and rexbus. This solves [discussion #11](https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/11)
+
 ## [Beta 2] - 2022-01-03
 
 ### Changed

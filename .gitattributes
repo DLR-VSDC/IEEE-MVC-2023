@@ -18,6 +18,7 @@
 LICENSE text
 
 # List of large files to be handled by Large File Storage (LFS)
+*.dll filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.fmu filter=lfs diff=lfs merge=lfs -text
 *.slx filter=lfs diff=lfs merge=lfs -text
