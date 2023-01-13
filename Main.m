@@ -38,25 +38,29 @@ fprintf('Simulation of the Mission: %s',Track)
 fprintf('\n\nInitializing the Simulink model:\n')
 %% System Parameters
 % The following parameters are not allowed to be changed.
-param.fuelcell.Imax     = 40;                                               % [A] maximum Fuel cell current
-param.fuelcell.SOCmax   = 1.00;                                             % [-] maximum allowed SoC
-param.fuelcell.SOCmin   = 0.05;                                             % [-] minimum allowed SoC
-param.fuelcell.H2_tank_level = 0.25;                                           % [kg] H2 tank initial level value
+param.fuelcell.Imax         = 40;                                           % [A] maximum Fuel cell current
+param.fuelcell.SOCmax       = 1;                                            % [-] maximum allowed SoC
+param.fuelcell.SOCmin       = 0.1;                                          % [-] minimum allowed SoC
 
-param.bat.SOCmax        = 1.00;                                             % [-] maximum allowed SoC
-param.bat.SOCmin        = 0.20;                                             % [-] minimum allowed SoC
-param.bat.SOC_delta     = 0.05;                                             % [-] SOC for derating
+param.fuelcell.H2_tank_level= 0.15;                                         % [kg] H2 tank initial level value
 
-param.bat.SOCmin_stop   = 0.01;                                             % [-] vehicle shutdown if battery SoC become lower than this value
-param.bat.SOCmax_stop   = 1.01;                                             % [-] vehicle shutdown if battery SoC become higher than this value
-param.bat.SOC_init = 0.65;                                                   % [-] vehicle battery start SoC
+param.bat.SOCmax            = 0.80;                                         % [-] maximum allowed SoC
+param.bat.SOCmin            = 0.20;                                         % [-] minimum allowed SoC
+param.bat.SOC_delta         = 0.05;                                         % [-] SOC for derating
+param.bat.SOC_init          = 0.65;                                         % [-] vehicle battery start SoC
 
-param.bat.Tmax          = 40;                                               % [deg C] maximum allowed temperature
+% safety battery/FC SoC values
+param.fuelcell.SOCmin_stop  = 0.01;                                         % [-] vehicle shutdown if FC SoC become lower than this value
+param.fuelcell.SOCmax_stop  = 1;                                            % [-] vehicle shutdown if FC SoC become higher than this value
+
+param.bat.SOCmin_stop       = 0.01;                                         % [-] vehicle shutdown if battery SoC become lower than this value
+param.bat.SOCmax_stop       = 0.99;                                         % [-] vehicle shutdown if battery SoC become higher than this value
+param.bat.Tmax              = 35;                                           % [deg C] maximum allowed temperature
 
 % Baseline EMA parameters
-param.EMAbaseline.kfc   = 0.8;                                              % fuel cell distribution ratio
-param.EMAbaseline.ktv   = 0.5;                                              % torque vectoring ratio
-param.EMAbaseline.a_ad  = 0.5;                                              % front/rear ratio
+param.EMAbaseline.kfc       = 0.8;                                          % fuel cell distribution ratio
+param.EMAbaseline.ktv       = 0.5;                                          % torque vectoring ratio
+param.EMAbaseline.a_ad      = 0.5;                                          % front/rear ratio
 
 %% Main simulation
 fprintf('Please wait until the simulation is completed...\n\n')
