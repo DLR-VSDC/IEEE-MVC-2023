@@ -6,7 +6,7 @@ The competitors are invited to develop the energy management algorithm (EMA) for
 The EMA determines the operating conditions for the two energy storage devices and the three electric motors;  
 minimization of the energy consumption and battery degradation are some  of the main goals of the EMA.
 
-## Annoucement
+## Announcement
 **Registration is open**. All interested competitor teams are asked [to register for the MVC 2023](https://docs.google.com/forms/d/e/1FAIpQLSe94R0zzwrVEMW3Cklv1id_CjdjhQdCgGX9MugRUXq23lMYLg/viewform?usp=sf_link).  
 
 ### Preliminary timeline
