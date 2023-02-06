@@ -7,11 +7,12 @@ The EMA determines the operating conditions for the two energy storage devices a
 minimization of the energy consumption and battery degradation are some  of the main goals of the EMA.
 
 ## Announcement
-**Registration is open**. All interested competitor teams are asked [to register for the MVC 2023](https://docs.google.com/forms/d/e/1FAIpQLSe94R0zzwrVEMW3Cklv1id_CjdjhQdCgGX9MugRUXq23lMYLg/viewform?usp=sf_link).  
+**Final release is planned for 2023/02/15**
+- Preview horizon will be extended to 30s in the future
+- Different minor improvements
 
 ### Preliminary timeline
-- **Deadline extension:** Registration is open until mid of Jan. 23.
-- EMA submission deadline ~ March 23.
+- EMA submission deadline - tba.
 - Paper submission deadline - tba.
 ### Release Notes
 Please refer to [the change log](CHANGELOG.md).  
