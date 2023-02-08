@@ -24,7 +24,7 @@ Please refer to [the change log](CHANGELOG.md).
 ## Important Links
 - How to get ready in MATLAB/Simulink, please refer to [installation readme](Installation.md).
 - For additional information please view presentation slides of the paper [*.pdf](./media/IEEE_VTS_MVC2023.pdf).
-- The [submitted version of the publication](https://elib.dlr.de/191407/) can be found in our elib repository.
+- The [submitted version of the publication](https://elib.dlr.de/193624/) can be found in our elib repository.
 - For information on the given tracks, please refer to [tracks readme](/Tracks/Readme.md).
 ### THE MVC 2023 Benchmark Problem
 
