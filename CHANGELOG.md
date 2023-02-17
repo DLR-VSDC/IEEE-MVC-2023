@@ -2,7 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Beta 3] - 2022-01-13
+## [Final Release] - 2023-02-17
+
+### Added
+- "Exit Flag" indicator added to the matlab report. This value is 1, when the SoC safety constraints of both the battery and the FC are violated, 0 otherwise. 
+- J_flag is added to the total performance metric to penalize when Exit Flag is 1.
+
+### Changed
+- Increased the preview horizon to 30 seconds with sampling time of 1 second. The signal under this name contains a vector of dimention 60x1, where the first 30 elements are the velocity and the remaining 30 elements are the curvature preview values. For the sake of convenience, selectors were added to this signal to extract the speed and curvature values on the baseline EMA subsystem.
+- Accuracy of the performance metrics was increased to 8 digits. The Baseline-Performance mat file is updated accordingly.
+- Increased "Maximum allowed lateral acceleration" to 10&nbsp;m/s2, see https://github.com/DLR-VSDC/IEEE-MVC-2023/issues/27.
+
+### Fixed
+- Fixed a typo on the battery's degradation unit. Correct unit: [Ah/cycle]
+- [Updated submitted version of the publication, incl. all fixed errata](https://elib.dlr.de/193953), solves latest: https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/18
+
+## [Beta 3] - 2023-01-13
 
 ### Changed
 Changes on main.m script:
@@ -29,7 +44,7 @@ refer to [updated chapter 3c of the paper](./media/MVC2023_chapter3C_update_Beta
 - New FMU model `MVC2023_Hash_47c69bf5.fmu` changed battey voltage signal from OCV to the acutual measured value in the circuit.    
  Added some additional signals to the batterybus and rexbus. This solves [discussion #11](https://github.com/DLR-VSDC/IEEE-MVC-2023/discussions/11)
 
-## [Beta 2] - 2022-01-03
+## [Beta 2] - 2023-01-03
 
 ### Changed
 
@@ -66,3 +81,6 @@ refer to [updated chapter 3c of the paper](./media/MVC2023_chapter3C_update_Beta
 ### Added
 
 - Initial version of the IEEE MVC 2023 material
+
+## License
+Copyright © 2022-2023 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)

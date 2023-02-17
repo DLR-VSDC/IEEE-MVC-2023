@@ -29,11 +29,12 @@ list        = { 'Track No.  1: FTP75',...
 [ind,tf]    = listdlg('PromptString',{'Please select a track',...
             'Please note: Only one can be selected at a time'},'SelectionMode','single','ListString',list,'ListSize',[300 200]);
 
-N_pre       = 100;                                                          % Preview window size
+N_pre       = 30;                                                           % Preview window size
 
 % Generate inputs to the Simulink model
 [Track,urlReport,urlHTML,urlPublish,FolderName,...
     preview,refSpeed,refCurv,Tend,T_s] = trackSelect(ind,N_pre);
+
 fprintf('Simulation of the Mission: %s',Track)
 fprintf('\n\nInitializing the Simulink model:\n')
 %% System Parameters

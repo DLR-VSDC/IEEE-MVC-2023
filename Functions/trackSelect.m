@@ -35,10 +35,10 @@ end
 
 % The following must remain unchanged
 FolderName      = sprintf([Track,'_',datestr(now, 'dd_mmm_yyyy_HH_MM')]);
-urlRepo        = sprintf(['Reporting/Report_History/',FolderName]);
-urlReport = sprintf([urlRepo,'/Report.m']);
-urlHTML   = sprintf([urlRepo,'/html']);
-urlPublish     = sprintf([urlHTML,'/Report.html']);
+urlRepo         = sprintf(['Reporting/Report_History/',FolderName]);
+urlReport       = sprintf([urlRepo,'/Report.m']);
+urlHTML         = sprintf([urlRepo,'/html']);
+urlPublish      = sprintf([urlHTML,'/Report.html']);
 
 mkdir(urlRepo);addpath(urlRepo);
 mkdir(urlHTML);addpath(urlHTML);

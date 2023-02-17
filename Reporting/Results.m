@@ -17,17 +17,24 @@ Tq_bat      = out.vehicle(:,5);                                             % ch
 H2SoC       = out.vehicle(:,6);                                             % Hydrogen fuel tank SoC
 H2P         = out.vehicle(:,7);                                             % actual fuel cell's power
 
-J_eng       = string(sprintf('%.4f',out.scores(end,1)*2.7778e-7));          % [kWh] Energy performance metric
-J_loss      = string(sprintf('%.4f',out.scores(end,7)*2.7778e-7));          % [kWh] Total loss performance metric
-J_eng_tot   = string(sprintf('%.4f',(out.scores(end,1)+out.scores(end,7))*2.7778e-7));  % [kWh] Total Energy performance metric 
+J_eng       = string(sprintf('%.8f',out.scores(end,1)*2.7778e-7));          % [kWh] Energy performance metric
+J_loss      = string(sprintf('%.8f',out.scores(end,7)*2.7778e-7));          % [kWh] Total loss performance metric
+J_eng_tot   = string(sprintf('%.8f',(out.scores(end,1)+out.scores(end,7))*2.7778e-7));  % [kWh] Total Energy performance metric 
 
-J_SOC       = string(sprintf('%.4f',out.scores(end,2)));                    % [s] Battery and FC SoC performance metric 
-J_T         = string(sprintf('%.4f',out.scores(end,3)));                    % [C] Temperature performance metric 
-J_v         = string(sprintf('%.4f',out.scores(end,4)));                    % [s] Velocity derating performance metric 
-J_deg       = string(sprintf('%.4f',out.scores(end,5)));                    % [mAh/cycle] Battery's degradation performance metric 
-J_tire      = string(sprintf('%.4f',out.scores(end,8)*0.000277778));        % [kWh] Tire losses performance metric
+J_SOC       = string(sprintf('%.8f',out.scores(end,2)));                    % [s] Battery and FC SoC performance metric 
+J_T         = string(sprintf('%.8f',out.scores(end,3)));                    % [C] Temperature performance metric 
+J_v         = string(sprintf('%.8f',out.scores(end,4)));                    % [s] Velocity derating performance metric 
+J_deg       = string(sprintf('%.8f',out.scores(end,5)));                    % [Ah/cycle] Battery's degradation performance metric 
+J_tire      = string(sprintf('%.8f',out.scores(end,8)*0.000277778));        % [kWh] Tire losses performance metric
 
-flag        = string(sprintf('%.4f',out.scores(end,6)));                    % Indicating exit flag
+% Check if the exit flag is 1 (when the SoC safety constraints are violated), penalize the total performance.
+flag        = out.scores(end,6);                                            % Indicating exit flag
+
+if flag==1
+    J_flg = inf;
+else
+    J_flg = 0;
+end
 
 % Performance metric weights (for the time being they are chosen uniformly)
 k_E         = 1/6;
@@ -54,8 +61,8 @@ JT_deg      = check_score(str2double(J_deg),J_deg_BL);
 JT_tire     = check_score(str2double(J_tire),J_tire_BL);
 
 % Computation of the total performance J
-J = k_E*JT_E+k_soc*JT_SOC+k_T*JT_T+k_v*JT_v+k_deg*JT_deg+k_tire*JT_tire;
-J = string(sprintf('%.4f',J));
+J = k_E*JT_E+k_soc*JT_SOC+k_T*JT_T+k_v*JT_v+k_deg*JT_deg+k_tire*JT_tire+J_flg;
+J = string(sprintf('%.8f',J));
 
 % EMA control variable outputs for plotting
 alpha_FC    = out.EMA(:,1);
@@ -164,10 +171,11 @@ saveas(gcf,img5);
 %% Save Performance
 info = ['Date: ',datestr(now, 'dd-mmm-yyyy'),', Mission Track: ',Track];    % generate string name of the folder
 
-Metric = ["J_{E,tot}";"J_{SoC}";"J_{TC}";"J_{deg}";"J_{v}";"J_{tire}";"J"]; % list of reported performance metrics
-Values = [J_eng_tot;J_SOC;J_T;J_deg;J_v;J_tire;J];                          % performance metrics' values
-Unit = ["[kWh]";"[s]";"[C]";"[mAh/cycle]";"[s]";"[Wh]";"[-]"];
-Description  = ["Total energy: energy provided by the storage unit and the total losses";
+Metric = ["Exit Flag";"J_{E,tot}";"J_{SoC}";"J_{TC}";"J_{deg}";"J_{v}";"J_{tire}";"J"]; % list of reported performance metrics
+Values = [string(flag);J_eng_tot;J_SOC;J_T;J_deg;J_v;J_tire;J];                         % performance metrics' values
+Unit = ["[-]";"[kWh]";"[s]";"[C]";"[Ah/cycle]";"[s]";"[Wh]";"[-]"];
+Description  = ["Exit flag is 1 when the battery and the FC SoC safety constraints are violated; 0 otherwise";
+                "Total energy: energy provided by the storage unit and the total losses";
                 "Timespan that SoC constraints are violated";
                 "Maximum temperature constraint violation";
                 "Lost battery capacity due to battery aging";

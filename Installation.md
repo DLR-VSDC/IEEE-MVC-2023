@@ -2,7 +2,7 @@
 
 ## Preparations
 - Make a local clone of the GIT repository https://github.com/DLR-VSDC/IEEE-MVC-2023.
-- To do this, a helpful tool for Windows is e.g. [Tortoise GIT](https://tortoisegit.org/).
+- To facilitate operating with git, a helpful tool for Windows is e.g. [Tortoise GIT](https://tortoisegit.org/) but there are several other [Git GUI Clients](https://git-scm.com/downloads/guis) available.
 - It is required to have **Matlab Version R2021b** (tested) or newer installed.
 - We do make use of the open source (2-Clause BSD license) FMI Kit for Simulink from Catia Systems.
 For more information on the FMI-Kit please refer to https://github.com/CATIA-Systems/FMIKit-Simulink.
@@ -25,4 +25,4 @@ Figure 1: Simulink block diagram of the MVC 2023 baseline EMA.
 Good luck!
 
 ## License
-Copyright © 2022 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
+Copyright © 2022-2023 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/)
