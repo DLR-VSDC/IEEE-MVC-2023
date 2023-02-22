@@ -25,7 +25,7 @@ The following could work (tested for *git version 2.39.1.windows.1*;):
       git push -u mvcevaluation main
       ```
  3. Add the evaluators (MVC_team GIT accounts: @tobolar @imeb @rpintodecastro @JBRDLR) to the collaborators on github.com: Settings / Collaborators / Manage access - button "Add people"
- 4. To be safe: let us know the HTTP of your repository.
+ 4. Let us know the URL of your repository by filling out the following [MVC Submission Google Form](https://forms.gle/rTM8zm6mNY918mPT8])
  
 
 ## If your work is yet versioned in a private repostory on github.com
