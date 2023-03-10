@@ -25,23 +25,7 @@ The following could work (tested for *git version 2.39.1.windows.1*;):
       git push -u mvcevaluation main
       ```
  3. Add the evaluators (MVC_team GIT accounts: @tobolar @imeb @rpintodecastro @JBRDLR) to the collaborators on github.com: Settings / Collaborators / Manage access - button "Add people"
- 4. Let us know the URL of your repository by filling out the following [MVC Submission Google Form](https://forms.gle/rTM8zm6mNY918mPT8])
- 
-
-## If your work is yet versioned in a private repostory on github.com
-
-1. Add the evaluators (MVC_team GIT accounts: @tobolar @imeb @rpintodecastro @JBRDLR) to the collaborators on github.com: Settings / Collaborators / Manage access - button "Add people"
-2. To be safe: let us know the HTTP of your repository.
-
-
-## Create a new repository: step-by-step visually
-
-1. Go to your avatar and select *Your repositories*:
-	<img src="./media/RepoA.png"/>
-2. Click *New*:
-   <img src="./media/RepoB.png"/>
-3. Add repo affiliations and click *Create repository*:
-   <img src="./media/RepoC.png"/>
+ 4. Let us know the URL of your repository by filling out the following [MVC Submission Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf0y_SD_n7wPls6xExOJOcU9CL_4K4JdZt13a3Mx1kzHPUOpw/viewform?usp=sf_link)
 
 ## License
 Copyright © 2023 DLR & UCM. The code is released under the [CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/legalcode). Link to [short summary of CC BY-NC 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/). For attribution see also [license file](LICENSE.md).
