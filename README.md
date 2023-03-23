@@ -14,9 +14,9 @@ Make sure **your EMA model can be executed by the "main.m" script**. This is cru
 
 Good luck! 
 
-### Preliminary timeline
+### Timeline
 
-- EMA submission deadline ~ End of March 2023.
+- **EMA submission deadline is 31st of March 2023.**
 - [Paper submission deadline - 17th of April 2023.](https://events.vtsociety.org/vppc2023/)
 
 ### Release Notes
