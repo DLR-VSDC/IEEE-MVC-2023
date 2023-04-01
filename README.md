@@ -16,7 +16,7 @@ Good luck!
 
 ### Timeline
 
-- **EMA submission deadline is 31st of March 2023.**
+- **EMA submission deadline is extended to 5th of April 2023 - please make sure your solution is executable in MATLAB 2021b and can be started from main.m.**
 - [Paper submission deadline - 17th of April 2023.](https://events.vtsociety.org/vppc2023/)
 
 ### Release Notes
