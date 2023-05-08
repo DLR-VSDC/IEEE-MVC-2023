@@ -7,17 +7,17 @@ The EMA determines the operating conditions for the two energy storage devices a
 
 ## Announcement
 
-**Registration is closed** and the repository is in final state.
+Dear competitors,
 
-**Please follow the** [**submission guideline** for your proposed EMA using a private GITHUB repository as described](SUBGUIDE.md).  
-Make sure **your EMA model can be executed by the "main.m" script**. This is crucial for the later (partial automated) assessment process of your EMA in the competition. 
+we are happy to announce that the team **EDLab Sharks team from University of Padova  
+won this year’s edition of the IEEE VTS Motor Vehicles Challange 2023**.
+Congratulations!
 
-Good luck! 
+All rankings and details on the assessment process [can be found here](./media/IEEE_MVC2023_Ranking.pdf).
 
-### Timeline
+Many thanks to all competitors and their valuable input during the development process of the challenge.
+We are looking forward to meet you in person at the IEEE VPPC 2023 in Milan!
 
-- **EMA submission deadline is extended to 5th of April 2023 - please make sure your solution is executable in MATLAB 2021b and can be started from main.m.**
-- [Paper submission deadline - 17th of April 2023.](https://events.vtsociety.org/vppc2023/)
 
 ### Release Notes
 
