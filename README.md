@@ -15,7 +15,7 @@ Congratulations!
 
 All rankings and details on the assessment process [can be found here](./media/IEEE_MVC2023_Ranking.pdf).
 
-Many thanks to all competitors and their valuable input during the development process of the challenge.
+Many thanks to all competitors and their valuable input during the development process of the challenge.  
 We are looking forward to meet you in person at the IEEE VPPC 2023 in Milan!
 
 
