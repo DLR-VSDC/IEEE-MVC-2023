@@ -9,8 +9,11 @@ The EMA determines the operating conditions for the two energy storage devices a
 
 Dear competitors,
 
-we are happy to announce that the team **EDLab Sharks team from University of Padova  
-won this year’s edition of the IEEE VTS Motor Vehicles Challange 2023**.
+we are happy to announce that the team   
+**EDLab Sharks team from University of Padova won this year’s edition of the IEEE VTS Motor Vehicles Challange 2023**.   
+2nd place: Ricercatori Polimi TEAM 2 from Politecnico di Milano  
+3rd place: NDS strategy 1 from Politecnico di Milano  
+
 Congratulations!
 
 All rankings and details on the assessment process [can be found here](./media/IEEE_MVC2023_Ranking.pdf).
